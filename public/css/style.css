@@ -1,0 +1,356 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Courier New', serif;
+  font-size: 1em;
+}
+#header #data-body {
+  color: #fff;
+}
+#feedback {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  background: #ddd;
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.5);
+}
+#enter,
+#registration {
+  right: 5%;
+  bottom: 5%;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.5);
+  margin: 5px;
+}
+#feedback div,
+#enter div,
+#registration div {
+  text-align: center;
+  cursor: pointer;
+  padding: 2px;
+}
+#feedback ul,
+#enter ul,
+#registration ul {
+  padding: 0px 10px 5px 10px;
+  list-style: none;
+  display: none;
+}
+#feedback li,
+#enter li,
+#registration li {
+  margin-bottom: 5px;
+}
+#feedback input {
+  display: block;
+  width: 225px;
+}
+#feedback a {
+  background: #999;
+  color: #000;
+  border-radius: 5px;
+  padding: 0px 5px;
+  text-decoration: none;
+  transition: background 0.3s 0s;
+}
+#feedback a:hover {
+  background: #333;
+  color: #fff;
+}
+#feedback .last,
+#enter .last {
+  text-align: right;
+}
+
+td,
+textarea,
+input,
+select {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12px;
+  color: #000000;
+  font-weight: normal;
+  line-height: 14px;
+}
+#header {
+  background: url('../img/bg.jpg');
+  height: 200px;
+  padding: 2px;
+}
+div h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 29px;
+  color: rgb(122, 131, 138);
+  float: left;
+  text-shadow: 1px 1px 1px black;
+  padding-top: 0px;
+  padding-left: 15px;
+}
+#logo {
+  float: right;
+}
+.topmenu {
+  display: flex;
+}
+.sidemenu {
+  display: table-cell;
+}
+.sidemenu a {
+  display: block;
+  margin: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background: #444;
+  text-decoration: none;
+  border-left: solid 1px white;
+  color: white;
+  font-size: 20px;
+  font-family: 'Courier New', serif;
+}
+.sidemenu a:hover {
+  color: white;
+  background: DodgerBlue;
+}
+.sidemenu a:last-child {
+  margin-bottom: 300px;
+}
+.topmenu a {
+  flex: 1;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background: #444;
+  text-decoration: none;
+  border-left: solid 1px white;
+  color: white;
+  font-size: 20px;
+  font-family: 'Courier New', serif;
+}
+.topmenu a:hover {
+  color: white;
+  background: DodgerBlue;
+}
+.card-img-top {
+  padding: 10px;
+}
+#footer {
+  position: fixed; /* Фиксированное положение */
+  left: 0;
+  bottom: 0; /* Левый нижний угол */
+  width: 100%; /* Ширина слоя */
+  background: #444;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .topmenu {
+    flex-direction: column;
+  }
+
+  #logo {
+    display: none;
+  }
+  #header {
+    height: 100px;
+  }
+}
+
+.btn {
+  letter-spacing: 1px;
+  text-decoration: none;
+  background: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid;
+  padding: 8px 20px;
+}
+
+.btn-outlined {
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn-outlined.btn-theme {
+  background: none;
+  color: Navy;
+  border-color: Navy;
+}
+
+.btn-outlined.btn-theme:hover,
+.btn-outlined.btn-theme:active {
+  color: #fff;
+  background: Navy;
+  border-color: Navy;
+}
+
+/* Кнопки навигации */
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+.btn2 a {
+  flex: 1;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background: #444;
+  text-decoration: none;
+  border-left: solid 1px white;
+  color: white;
+  font-size: 20px;
+  font-family: 'Courier New', serif;
+}
+
+:root {
+  --height: 3em;
+  --bgr: rgb(64, 64, 64);
+}
+
+.btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  background: var(--bgr);
+  height: calc(1 * var(--height));
+  width: calc(2 * 0.866 * var(--height));
+  box-shadow: 0.5em 0.5em 0.5em lightgrey;
+  transition: box-shadow ease 0.2s;
+  z-index: 9;
+}
+
+.btn2:after,
+.btn2:before {
+  content: '';
+  position: absolute;
+  transition: all ease-in-out 0.35s;
+  top: 0px;
+  left: 0px;
+  height: calc(1 * var(--height));
+  width: calc(2 * 0.866 * var(--height));
+  background: var(--bgr);
+  opacity: 0;
+  z-index: -5;
+}
+
+.btn2:hover {
+  transition: box-shadow linear 0.2s;
+  box-shadow: none;
+}
+.btn2:after {
+  transform: rotate(60deg) translateX(calc(-2 * var(--height)));
+}
+
+.btn2:before {
+  transform: rotate(-60deg) translateX(calc(2 * var(--height)));
+  transition-delay: 0.1s;
+}
+
+.btn2:hover:after,
+.btn2:hover:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transition: all ease-in-out 0.2s;
+  height: calc(1 * var(--height));
+  width: calc(2 * 0.866 * var(--height));
+  background: var(--bgr);
+  opacity: 1;
+  z-index: -5;
+}
+
+.btn2:hover:after {
+  transform: rotate(60deg) translateX(0);
+}
+
+.btn2:hover:before {
+  transform: rotateZ(-60deg) translateX(0px);
+  transition-delay: 0.1s;
+}
+
+.btn2:active:before,
+.btn2:active:after {
+  transform: rotateZ(0deg);
+}
+
+.btn2:active:before {
+  transition-delay: 0.1s;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  margin: 3px;
+  font-size: 11px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.modal-window {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -400px;
+  width: 800px;
+  padding: 10px;
+  background: white;
+  border: solid 1px grey;
+  border-radius: 5px;
+  z-index: 99;
+  box-shadow: 1px 1px 1px black;
+}
+.modal-window td {
+  border: solid 1px gray;
+  width: 100%;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  margin: 0;
+  padding: 0px;
+  text-decoration: none;
+  color: red;
+  font-size: 24px;
+}
+.modal-close-btn:before {
+  position: relative;
+  content: 'Закрыть';
+  top: -1px;
+  font-size: 16px;
+}
+#overlay {
+  background: black;
+  opacity: 0.7;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
